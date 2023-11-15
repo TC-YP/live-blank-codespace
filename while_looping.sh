@@ -1,8 +1,11 @@
 #!/bin/bash
 
-counter=1
-while [[ $counter -le 10 ]]
+read -p "What is your name? " name
+
+while [[ -z ${name} ]]
 do
-    echo $counter
-    ((counter++))
+    echo "Your name can not be blank. Please enter a valid name!"
+    read -p "Enter your name again? " name
 done
+
+echo "Hi there ${name}"
