@@ -1,7 +1,8 @@
 #!/bin/bash
-name="GISC605"
-greeting="Hello,"
 
-echo "$greeting $name" $1
-echo "$greeting $name" $2
-echo "$greeting $name" $@
+# Ask the User for their name
+read -p "What is your name?" name
+
+# Greet the user
+echo "Hi there, $name"
+echo "Welcome to Gisc605"
