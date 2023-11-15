@@ -1,6 +1,7 @@
 #!/bin/bash
-name= "GISC605"
+name="GISC605"
+greeting="Hello,"
 
-greeting= "Hello,"
-
-echo "$greeting $name"
+echo "$greeting $name" $1
+echo "$greeting $name" $2
+echo "$greeting $name" $@
